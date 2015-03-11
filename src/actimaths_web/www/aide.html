@@ -1,0 +1,523 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Aide</title>
+<link rel="stylesheet" href="/data/css/style.css" />
+<link rel="icon" href="/data/images/favicon.ico" />
+<script type="text/javascript" src='http://ajax.googleapis.com/ajax/libs/jquery/1.6.1/jquery.min.js'></script>
+<script type="text/javascript" src="/data/js/organictabs.jquery.js"></script>
+<script type="text/javascript" src="/data/js/shCore.js"></script>
+<script type="text/javascript" src="/data/js/shBrushPython.js"></script>
+<script type="text/javascript" src="/data/js/shBrushLatex.js"></script>
+<script type="text/javascript" src="/data/js/shBrushBash.js"></script>
+<script type="text/javascript" src="/data/js/shBrushXml.js"></script>
+<link href="/data/css/shCore.css" rel="stylesheet" type="text/css" />
+<link href="/data/css/shThemeDefault.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript">
+SyntaxHighlighter.all();
+</script>
+</head>
+<body>
+<div id="page-wrap">
+<!-- Titre de la page -->
+<h1>Aide</h1>
+<h2 class="erreur">En cas de remarques, contacter moi depuis la page "Contact" du site. </h2>
+<!-- Aide de l'utisateur -->
+<h2>Utilisateur</h2>
+<div id="AideUtilisateur" class="Onglets"> <!-- START Organic Tabs (AideUtilisateur) -->
+<script>
+$(function() {
+$("#AideUtilisateur").organicTabs();
+});
+</script>
+<ul class="nav">
+<li class="nav-0"><a href="#AideUtilisateur-0" class="current">Fermer</a></li>
+<li class="nav-1"><a href="#AideUtilisateur-1">Choisir des exercices</a></li>
+<li class="nav-2"><a href="#AideUtilisateur-2">Editer ses informations</a></li>
+<li class="nav-3"><a href="#AideUtilisateur-3">Choisir les sorties et des modèles</a></li>
+<li class="nav-4 last"><a href="#AideUtilisateur-4">Creer et exploiter</a></li>
+</ul>
+<!-- Onglet 0 -->
+<div class="list-wrap"> <!-- START List Wrap -->
+<ul id="AideUtilisateur-0">
+</ul>
+<!-- Onglet 1 -->
+<ul id="AideUtilisateur-1" class="hide">
+<li><img class="aide img90" src="/data/images/exercices_quatrieme.jpg" alt="exercices_quatrieme"/></li>
+<li>Le choix des exercices se fait par niveaux, puis par domaines présentés en onglets. En cliquant sur les différents domaines de chaque niveaux, les exercices apparaitront. L'onglets "Fermer" permet de replier les onglets du niveau correspondant et ainsi d'alléger l'affichage. Chaque ligne d'un onglet correspond à un exercice, on va donc en détailler les différents champs de la gauche vers la droite :</li>
+<li class="sousSousTitre">La vignette permet de se faire une idée rapide de l'exercice.</li>
+<li class="sousSousTitre">Le champs de saisie du nombre de question pour cet exercice (au maximum 20).</li>
+<li class="sousSousTitre">Le libellé de l'exercice.</li>
+<li class="sousSousTitre">Le(s) champ(s) de saisie de(s) paramètre(s). Ils correspondent en général à la taille des nombres utilisés dans l'exercice et permettent donc d'en faire varier la difficulté.</li>
+<li>Pour des raisons techniques, vous ne pouvez pas générer des documents contenant plus de 20 questions.</li>
+</ul>
+<!-- Onglet 2 -->
+<ul id="AideUtilisateur-2" class="hide">
+<li><img class="aide img90" src="/data/images/options_informations.jpg" alt="options_informations"/></li>
+<li>La plupart de ces informations sont explicites et figureront sur la page de garde. Malheureusement, pour des raisons techniques, ces informations ne seront pas conservées si vous rechargez la page. Voici un exemple de page de garde en conservant les informations par defaut:</li>
+<li><img class="aide img90" src="/data/images/options_informations_garde.jpg" alt="options_informations_garde"/></li>
+<li>L'information la plus importante est le "Temps par slide" qui est le temps en secondes d'affichage de chacune des questions. Veuillez donc bien à l'ajuster au mieux pour ne pas avoir une activité mentale trop rapide ou trop lente.</li>
+</ul>
+<!-- Onglet 3 -->
+<ul id="AideUtilisateur-3" class="hide">
+<li><img class="aide img90" src="/data/images/options_sorties.jpg" alt="options_sorties"/></li>
+<li>Les sorties dites "Vidéoprojetable" sont destinées à être utilisées en classe avec une vidéo-projecteur. Leurs caractéristiques sont les suivantes:</li>
+<li class="sousSousTitre">Une question ou un corrigé par slide.</li>
+<li class="sousSousTitre">Les slides du sujet défilent automatiquement selon le paramètre "Temps par slide" (sauf page de garde)</li>
+<li class="sousSousTitre">Les différents modèles proposés sont optimisés pour une grande lisibilité.</li>
+<li>Les sorties dites "Papier" sont destinées à être imprimées. Leurs caractéristiques sont les suivantes:</li>
+<li class="sousSousTitre">Toutes les questions ou les corrigés sont sur la même page.</li>
+<li class="sousSousTitre">Les différents modèles proposent une gestion optimale de l'espace (gain de copie).</li>
+<li>Le choix du modèle est très important. Leurs caractéristiques sont les suivantes:</li>
+<li class="sousSousTitre">Les modèles monocolonnes proposent une seule question par slide ou page.</li>
+<li class="sousSousTitre">Les modèles bicolonnes identiques proposent 2 questions par slide ou page. Ces 2 questions disposées côte à côte verticalement sont de même type, mais les valeurs utilisés sont différentes. Cela permet de faire travailler les 2 élèves d'une table sans risque de triche. Attention cependant la difficulté des séries droite et gauche peut être inégale.</li>
+<li class="sousSousTitre">Les modèles bicolonnes inversées proposent 2 questions par slide ou page. Actimaths Web génère les questions demandées, puis dispose ces questions dans le bon sens à gauche et dans le sens inverse à droite. Cela permet de faire travailler les 2 élèves d'une table en minimisant la triche. Les questions étant les mêmes (mais décallées), il n'y a pas de soucis d'équité.</li>
+</ul>
+<!-- Onglet 4 -->
+<ul id="AideUtilisateur-4" class="hide">
+<li>Quand vous avez fait votre choix d'exercices, que vous avez remplis vos informations (optionnel) et sélectionner au moins une sortie, voici le choix qui se présente à vous:</li>
+<li><img class="aide img40" src="/data/images/boutons.jpg" alt="boutons"/></li>
+<li class="sousSousTitre">Le bouton "Annuler" réinitialise la page.</li>
+<li class="sousSousTitre">Le bouton "Créer" lance la crétion des documents.</li>
+<li class="sousSousTitre">Le bouton "Aide" lance la page d'aide que vous êtes en train de lire en ce moment.</li>
+<li class="sousSousTitre">Le bouton "Crédits" affichent les remerciments et les liens vers les ressources utilisées.</li>
+<li>Une fois le bouton "Créer" cliqué, Actimaths Web se met au travail. Après un temps de calcul plus ou moins important selon vos choix d'exercices et de sorties, vous devriez avoir une notification de téléchargement pour un fichier nommé "exercice.zip". Par exemple pour Firefox:</li>
+<li><img class="aide img50" src="/data/images/demande_enregistrement.jpg" alt="demande_enregistrement"/></li>
+<li>Ce fichier "exercice.zip" est une archive ZIP contenant les documents produits à votre demande par Actimaths Web. Si vous ne parvenez pas à ouvrir ce fichier, vous devez installer un logiciel de compression/décompression (7zip, winrar, winzip...etc). Si tout se déroule bien, vous devriez obtenir une fenètre similaire à celle-ci :</li>
+<li><img class="aide img90" src="/data/images/fichier.jpg" alt="fichier"/></li>
+<li>Vous pouvez remarquer que Actimaths Web vous renvoie 2 fichiers par sortie sélectionnée. Ainsi, dans notre exemple, j'ai sélectionné les sorties "Sujet vidéoprojetable" et "Corrigé vidéoprojetable". J'obtiens alors 4 fichiers en retour. On va maintenant se concentrer sur les fichiers "exercice-sujet-presentation.tex" et "exercice-sujet-presentation.pdf" qui sont le retour de la sortie "Sujet vidéoprojetable":</li>
+<li class="sousSousTitre">Le fichier "exercice-sujet-presentation.pdf" est directement lisible par un lecteur de PDF. C'est probablement celui que vous voulez.</li>
+<li class="sousSousTitre">Le fichier "exercice-sujet-presentation.tex" est le code source laTeX. Si vous ne savez pas à quoi il correspond, ne vous embêtez pas avec lui.</li>
+<li>On va donc sélectionner le fichier "exercice-sujet-presentation.pdf" pour commencer l'activité mentale ou alors le fichier "exercice-corrige-presentation.pdf" pour la correction. Si vous ne parvenez pas à ouvrir ces fichiers, vous devez installer un logiciel de lecture de PDF (Adode Reader, Foxit...etc). Si tout se déroule bien, vous devriez obtenir une fenètre similaire à celle-ci :</li>
+<li><img class="aide img90" src="/data/images/lecture_pdf.jpg" alt="lecture_pdf"/></li>
+<li>Voici quelques précisions pour bien emploiter ces PDF:</li>
+<li class="sousSousTitre">Les transitions automatiques (souvenez vous le paramètre "Temps par slide") ne seront actives qu'en plein écran. Celui-ci s'active en général avec la touche "F5".</li>
+<li class="sousSousTitre">La page de garde du sujet n'a pas de transition automatique. Vous pouvez alors attendre que toute la classe se prépare et prenne bien en compte le temps par slide.</li>
+<li class="sousSousTitre">La correction n'a pas du tout de transition automatique. Vous pouvez prendre le temps que vous voulez pour faire la correction.</li>
+<li class="sousSousTitre">La sortie "Corrigé papier" peut être projetée dans certain cas pour faire une correction plus rapide.</li>
+</ul>
+<!-- FIN -->
+</div> <!-- END List Wrap -->
+</div> <!-- END Organic Tabs (AideUtilisateur) -->
+<!-- Aide du développeur -->
+<h2>Développeur</h2>
+<div id="AideDeveloppeur" class="Onglets"> <!-- START Organic Tabs (AideDeveloppeur) -->
+<script>
+$(function() {
+$("#AideDeveloppeur").organicTabs();
+});
+</script>
+<ul class="nav">
+<li class="nav-0"><a href="#AideDeveloppeur-0" class="current">Fermer</a></li>
+<li class="nav-1"><a href="#AideDeveloppeur-1">Prérequis</a></li>
+<li class="nav-2"><a href="#AideDeveloppeur-2">Créer un exercice</a></li>
+<li class="nav-3"><a href="#AideDeveloppeur-3">Exemples détaillés</a></li>
+<li class="nav-4 last"><a href="#AideDeveloppeur-4">Proposer l'exercice</a></li>
+</ul>
+<!-- Onglet 0 -->
+<div class="list-wrap"> <!-- START List Wrap -->
+<ul id="AideDeveloppeur-0">
+</ul>
+<!-- Onglet 1 -->
+<ul id="AideDeveloppeur-1" class="hide">
+<li class="titre">Languages de programmation utilisés</li>
+<li>Pour développer votre propre exercice, vous devrez maitriser au mieux les 2 languages suivants :</li>
+<li class="sousSousTitre"><span class="souligne">Python 2</span> : c'est le language dans lequel est programmé Actimaths. Il est très puissant du fait de ses nombreux modules tout en restant simple et facile à débugger.</li>
+<li class="sousSousTitre"><span class="souligne">LaTeX</span> : Actimaths n'est en fait qu'un générateur automatisé de code LaTeX. Vous devez donc être capable d'obtenir ce que vous voulez avec LaTeX avant d'en automatiser sa production.</li>
+<li class="titre">Dépendances logicielles</li>
+<li>Avant de vous lancer, vous devez installer certains logiciels indispensables au bon développement d'Actimaths. On peut les décomposer en 3 grands groupes :</li>
+<li class="sousSousTitre"><span class="souligne">Un environnement Python 2</span> : Python 2 lui-même et lxml (un module qui gère les fichiers au format xml).</li>
+<li class="sousSousTitre"><span class="souligne">Une distribution LaTeX</span> : Un ensemble qui permet compiler le code LaTeX en PDF.</li>
+<li class="sousSousTitre"><span class="souligne">Des éditeurs de code</span> : Un spécialisé pour le code Python et un pour le code LaTeX.</li>
+<li class="sousTitre">Windows :</li>
+<li class="sousSousTitre">Vous trouverez Python 2 <a href="http://www.python.org/download/">ici</a> et le module lxml <a href="http://www.lfd.uci.edu/~gohlke/pythonlibs/#lxml">ici</a>. Faites bien attention de télécharger la dernière version sortie de Python 2 (actuellement la 2.7.6) et la version de lxml correspondante.</li>
+<li class="sousSousTitre">Pour ce qui de LaTeX, vous avez le choix entre <a href="http://miktex.org/download">MiKTeX</a> ou <a href="http://www.tug.org/texlive/acquire-netinstall.html">TeX Live</a>. Personnellement, je n'ai testé que MiKTeX.</li>
+<li class="sousSousTitre">L'éditeur de code Python IDLE qui est installé en même temps que Python 2 est suffisant. Je vous conseille <a href="http://www.xm1math.net/texmaker/download_fr.html">Texmaker</a> pour le code LaTeX. La page de téléchargement de Texmaker contient aussi des explications pour configurer MiKTeX et TeX Live.</li>
+<li class="sousTitre">Mac Os X (à confirmer vu que je n'ai pas de Mac) :</li>
+<li class="sousSousTitre">Vous trouverez Python 2 <a href="http://www.python.org/download/">ici</a>. Le module lxml s'installe avec la ligne de commande suivanate :</li>
+<li><pre class="brush:shell">
+STATIC_DEPS=true sudo pip install lxml
+</pre></li>
+<li class="sousSousTitre">Pour ce qui de LaTeX, vous devez installer <a href="http://tug.org/mactex/downloading.html">MacTeX</a> .</li>
+<li class="sousSousTitre">L'éditeur de code Python IDLE qui est installé en même temps que Python 2 est suffisant. Je vous conseille <a href="http://www.xm1math.net/texmaker/download_fr.html">Texmaker</a> pour le code LaTeX. La page de téléchargement de Texmaker contient aussi des explications pour configurer MacTeX.</li>
+<li class="sousTitre">Linux :</li>
+<li class="sousSousTitre">Sur Ubuntu, vous devez exécuter la commande suivante pour installer les paquets nécessaires :</li>
+<li><pre class="brush:shell">
+sudo apt-get install python-lxml texlive-pstricks texlive-latex-base texlive-latex-extra texlive-fonts-recommended texlive-latex-recommended
+</pre></li>
+<li class="sousSousTitre">Sur Archlinux, vous devez exécuter la commande suivante en root pour installer les paquets nécessaires :</li>
+<li><pre class="brush:shell">
+pacman -S python2 python2-lxml texlive-pstricks texlive-latexextra
+</pre></li>
+<li class="titre">Kit de développement (SDK)</li>
+<li>Pour faciliter le développement, j'ai préparé un <a href="/data/sdk/sdk_actimaths.zip">SDK</a>. C'est une version degraissée au maximum de Actimaths qui permettra d'exécuter et de debugger vos exercices. Maintenant que vous avez tout installé, on va se servir de ce SDK pour voir si votre environnement de développement est au point :</li>
+<li class="sousSousTitre"><span class="souligne">1ère étape</span> : Télécharger et décompresser le SDK. Placer vous dans le dossier "sdk_actimaths".</li>
+<li class="sousSousTitre"><span class="souligne">2eme étape</span> : Exécuter le fichier "system.py". Normalement votre invite de commande doit vous afficher le code qui suit. Si ce n'est pas le cas, vous devez revoir votre installation de Python 2 ou de lxml.</li>
+<li><pre class="brush:shell">
+Niveau = "Sixième" 
+    Domaine = "Gestion de données" 
+        Nom Exercice = "Hello Word" Commande = "hello_word.HelloWord" 
+            Nom Paramètre = "Parametre 1" Min = "-10" Max = "10" 
+            Nom Paramètre = "Parametre 2" Min = "-10" Max = "10" 
+    Domaine = "Nombres et Calculs" 
+    Domaine = "Géométrie" 
+    Domaine = "Grandeurs et mesures" 
+Niveau = "Cinquième" 
+    Domaine = "Gestion de données" 
+    Domaine = "Nombres et Calculs" 
+    Domaine = "Géométrie" 
+    Domaine = "Grandeurs et mesures" 
+Niveau = "Quatrième" 
+    Domaine = "Gestion de données" 
+    Domaine = "Nombres et Calculs" 
+    Domaine = "Géométrie" 
+    Domaine = "Grandeurs et mesures" 
+Niveau = "Troisième" 
+    Domaine = "Gestion de données" 
+    Domaine = "Nombres et Calculs" 
+    Domaine = "Géométrie" 
+    Domaine = "Grandeurs et mesures" 
+
+Entrez la commande de l'exercice :
+</pre></li>
+<li class="sousSousTitre"><span class="souligne">3eme étape</span> : Le SDK ne contient qu'un seul exercice de démonstration dont la commande est "hello_word.HelloWord". Vous devez donc saisir les instructions suivantes pour lancer la création de cet exercice. La valeur des paramètres n'a aucune importance pour cet exercice.</li>
+<li><pre class="brush:shell">
+Entrez la commande de l'exercice : hello_word.HelloWord
+Entrez la valeur du parametre 1 : 2
+Entrez la valeur du parametre 2 : 
+</pre></li>
+<li>Normalement 4 fichiers PDF doivent s'ouvrir après un temps de compilation. Si ce n'est pas le cas, vous devez revoir l'installation de votre distribution LaTeX.</li>
+<li><img class="aide img70" src="/data/images/prerequis_1.jpg" alt="exemple_detaille_1"/></li>
+<li class="titre">Félicitations votre environnement de développement est fonctionnel !!!</li>
+</ul>
+<!-- Onglet 2 -->
+<ul id="AideDeveloppeur-2" class="hide">
+<li>On va insérer un nouvel exercice dans le SDK et l'exécuter. Pour cette explication, je vais faire très simple en duplicant l'exercice inclu "Hello Word".</li>
+<li class="titre">Créer l'exercice</li>
+<li>Le code des exercices se trouve dans le dossier /sdk_actimaths/exercices_actimaths/. Le code de l'exercice "Hello Word" est donc le fichier "hello_word.py". Je vais créer un nouvel exercice "Hello Word 2" en créant le fichier "hello_world2.py". Ce fichier aura le contenu suivant :</li>
+<li><pre class="brush:py">
+#!/usr/bin/python
+# -*- coding: utf-8 -*-
+#
+
+def HelloWord2(parametre):
+    # initialisation
+    question = u"Ceci est la question de mon exercice perso"
+    exo = []
+    cor = []
+    # affichage
+    exo.append(u"Ceci est le sujet de mon exercice perso")
+    cor.append(u"Ceci est le corrigé de mon exercice perso")
+    return (exo, cor, question)
+</pre></li>
+<li>On voit donc qu'un exercice est juste une fonction :</li>
+<li class="sousSousTitre"><span class="souligne">Avec la liste "parametre" comme entrée</span> : 2 éléments maximums (par exemple la valeur mini et maxi des nombres utilisés dans l'exercice). Rien ne vous oblige à utiliser ces paramètres dans vos exercices. Le but est de permettre à l'utilisateur d'ajuster la difficulté de l'exercice.</li>
+<li class="sousSousTitre"><span class="souligne">Avec les listes de chaines de caractères "exo", "cor" et "question" en sortie</span> : Elles doivent absolument exister (même vide) sinon votre exercice fera planter Actimaths.</li>
+<li class="titre">Décrire cet exercice</li>
+<li>La description d'un exercice (son nom, sa commande, ses paramètres...) se fait en éditant le fichier "niveau.xml" qui se trouve dans le dossier /sdk_actimaths/data/onglets/. Pour mon exemple, je choisis de l'insérer en Troisième et Géométrie. Ce qui donne :</li>
+<li><pre class="brush:xml">
+&lt;liste>
+  &lt;onglet nom="Sixième">
+    &lt;categorie nom="Gestion de données">
+      &lt;exercice commande="hello_word.HelloWord" description="Exercice de démonstration" nom="Hello Word">
+        &lt;parametre defaut="0" max="10" min="-10" nom="Parametre 1"/>
+        &lt;parametre defaut="0" max="10" min="-10" nom="Parametre 2"/>
+      &lt;/exercice>    
+    &lt;/categorie>
+    &lt;categorie nom="Nombres et Calculs">
+      
+    &lt;/categorie>
+    &lt;categorie nom="Géométrie">
+     
+    &lt;/categorie>
+    &lt;categorie nom="Grandeurs et mesures">
+     
+    &lt;/categorie>
+  &lt;/onglet>
+  &lt;onglet nom="Cinquième">
+    &lt;categorie nom="Gestion de données">
+      
+    &lt;/categorie>
+    &lt;categorie nom="Nombres et Calculs">
+     
+    &lt;/categorie>
+    &lt;categorie nom="Géométrie">
+     
+    &lt;/categorie>
+    &lt;categorie nom="Grandeurs et mesures">
+     
+    &lt;/categorie>
+  &lt;/onglet>
+  &lt;onglet nom="Quatrième">
+    &lt;categorie nom="Gestion de données">
+
+    &lt;/categorie>
+    &lt;categorie nom="Nombres et Calculs">
+      
+    &lt;/categorie>
+    &lt;categorie nom="Géométrie">
+
+    &lt;/categorie>
+    &lt;categorie nom="Grandeurs et mesures">
+
+    &lt;/categorie>
+  &lt;/onglet>
+  &lt;onglet nom="Troisième">
+    &lt;categorie nom="Gestion de données">
+
+    &lt;/categorie>
+    &lt;categorie nom="Nombres et Calculs">
+      
+    &lt;/categorie>
+    &lt;categorie nom="Géométrie">
+      &lt;exercice commande="hello_word2.HelloWord2" description="Exercice personnel" nom="Hello Word 2">
+        &lt;parametre defaut="4" max="100" min="-100" nom="Parametre 1"/>
+        &lt;parametre defaut="5" max="100" min="-100" nom="Parametre 2"/>
+      &lt;/exercice>   
+    &lt;/categorie>
+    &lt;categorie nom="Grandeurs et mesures">
+
+    &lt;/categorie>
+  &lt;/onglet>
+&lt;/liste>
+</pre></li>
+<li class="titre">Exécuter cet exercice</li>
+<li>Exécuter le fichier "system.py". Normalement votre invite de commande doit vous afficher le code qui suit :</li>
+<li><pre class="brush:shell">
+Niveau = "Sixième" 
+    Domaine = "Gestion de données" 
+        Nom Exercice = "Hello Word" Commande = "hello_word.HelloWord" 
+            Nom Paramètre = "Parametre 1" Min = "-10" Max = "10" 
+            Nom Paramètre = "Parametre 2" Min = "-10" Max = "10" 
+    Domaine = "Nombres et Calculs" 
+    Domaine = "Géométrie" 
+    Domaine = "Grandeurs et mesures" 
+Niveau = "Cinquième" 
+    Domaine = "Gestion de données" 
+    Domaine = "Nombres et Calculs" 
+    Domaine = "Géométrie" 
+    Domaine = "Grandeurs et mesures" 
+Niveau = "Quatrième" 
+    Domaine = "Gestion de données" 
+    Domaine = "Nombres et Calculs" 
+    Domaine = "Géométrie" 
+    Domaine = "Grandeurs et mesures" 
+Niveau = "Troisième" 
+    Domaine = "Gestion de données" 
+    Domaine = "Nombres et Calculs" 
+    Domaine = "Géométrie" 
+        Nom Exercice = "Hello Word 2" Commande = "hello_word2.HelloWord2" 
+            Nom Paramètre = "Parametre 1" Min = "-100" Max = "100" 
+            Nom Paramètre = "Parametre 2" Min = "-100" Max = "100" 
+    Domaine = "Grandeurs et mesures" 
+
+Entrez la commande de l'exercice :
+</pre></li>
+<li>Vous devez donc saisir les instructions suivantes pour lancer la création du nouvel exercice "Hello Word 2" :</li>
+<li><pre class="brush:shell">
+Entrez la commande de l'exercice : hello_word2.HelloWord2
+Entrez la valeur du parametre 1 : 5
+Entrez la valeur du parametre 2 : 2
+</pre></li>
+<li>Normalement 4 fichiers PDF doivent s'ouvrir après un temps de compilation :</li>
+<li><img class="aide img70" src="/data/images/creer_exercice_1.jpg" alt="creer_exercice_1"/></li>
+<li class="titre">Félicitations vous avez créé votre premier exercice !!!</li>
+</ul>
+<!-- Onglet 3 -->
+<ul id="AideDeveloppeur-3" class="hide">
+<li class="titre">Un exercice de pourcentage en sixième</li>
+<li class="sousTitre">Code Python:</li>
+<li><pre class="brush:py">
+#!/usr/bin/python
+# -*- coding: utf-8 -*-
+
+import random
+
+def parametre():
+    objet = ['allumettes','billes','boules','timbres','pieces','crayons']
+    i = random.randrange(0, len(objet))
+    pourcentage = [10, 20, 25, 50]
+    j = random.randrange(0, len(pourcentage))
+    part = random.randrange (2, 10)
+    total = part * 100 / pourcentage[j]
+    return objet[i], part, total, pourcentage[j]
+
+def tex_pourcentage(exo,cor):
+    (objet, part, total, pourcentage)= parametre()
+    exo.append("Je prends $ %s $ %s parmi $ %s $. \\newline" % (part, objet, total))
+    cor.append("Je prends $ %s $ %s parmi $ %s $. \\newline" % (part, objet, total))
+    exo.append(u"J\'ai donc pris $ \\ldots \\%% $ des %s" % objet)
+    cor.append(u"J\'ai donc pris $ \\boxed{%s \\%%} $ des %s" % (pourcentage, objet))
+
+def CalculPourcentage(parametre):
+    question = u"Compléter :"
+    exo = []
+    cor = []
+    tex_pourcentage(exo,cor)
+    return (exo, cor,question)
+</pre></li>
+<li class="sousTitre">Code LaTeX genéré :</li>
+<li class="sousSousTitre">Sujet :</li>
+<li><pre class="brush:tex">
+Je prends $ 3 $ boules parmi $ 12 $. \newline
+J'ai donc pris $ \ldots \% $ des boules
+</pre></li>
+<li class="sousSousTitre">Corrigé :</li>
+<li><pre class="brush:tex">
+Je prends $ 3 $ boules parmi $ 12 $. \newline
+J'ai donc pris $ \boxed{25 \%} $ des boules
+</pre></li>
+<li class="sousTitre">Rendu après compilation :</li>
+<li><img class="aide img70" src="/data/images/exemple_detaille_1.jpg" alt="exemple_detaille_1"/></li>
+<li class="titre">Un exercice de lecture d'angle sur le rapporteur en sixième</li>
+<li class="sousTitre">Code Python :</li>
+<li><pre class="brush:py">
+#!/usr/bin/python
+# -*- coding: utf-8 -*-
+
+import random
+
+#------------------methode---------------------------------------------
+def tex_rapporteur(enonce):
+    enonce.append("\\psarc(0,0){5}{0}{180}")
+    enonce.append("\\psarc(0,0){4.5}{0}{180}")
+    enonce.append("\\psarc(0,0){3}{0}{180}")
+    enonce.append("\\psarc(0,0){0.5}{0}{180}")
+    enonce.append("\\SpecialCoor")
+    enonce.append("\\multido{\\i=0+1}{181}{\\psline[linewidth=0.01](4.5;\\i)(5;\\i)}")
+    enonce.append("\\multido{\\i=0+10}{19}{\\psline(4;\\i)(5;\\i)}")
+    enonce.append("\\psframe(-5,-1)(5,0)")
+    enonce.append("\\multido{\\i=5+10}{18}{\\psline(4.25;\\i)(5;\\i)}")
+    enonce.append("\\tiny")
+    enonce.append("\\multido{\\i=0+10}{19}{\\rput(3.75;\\i){\\i }}")
+    enonce.append("\\pscircle[fillstyle=solid, fillcolor=white]{0.1} ")
+    enonce.append("\\NormalCoor")
+
+
+def tex_angle(enonce, angle, nom_angle):
+     enonce.append("\\SpecialCoor")
+     enonce.append("\\psline[linewidth=0.05](0;0)(5.2;%s)" % angle)
+     enonce.append("\\rput(5.5;%s){$%s$}" % (angle, nom_angle))
+     enonce.append("\\NormalCoor")
+
+def tex_mesure(enonce, angle, nom_angle):
+     enonce.append("\\begin{center}")
+     enonce.append("\\psset{unit=0.5cm}")
+     enonce.append("\\begin{pspicture}(-5,-1)(5,5.5)")
+     tex_rapporteur(enonce)
+     for i in range(len(angle)):
+         tex_angle(enonce,angle[i],nom_angle[i])
+     enonce.append("\\end{pspicture}")
+     enonce.append("\\end{center}")
+
+#------------------construction-----------------------------------------
+def MesureSimple(parametre):
+    choix = random.randrange(2)
+    if choix:
+        nom_angle = "\\widehat{xOy}"
+    else:
+        nom_angle = "\\widehat{yOz}"
+    question = "Donner la mesure de l'angle $%s$ :" % nom_angle 
+    exo = []
+    cor = []
+    angle = random.randrange(5,175,5)
+    tex_mesure(exo, [0,angle,180],["x","y","z"])
+    tex_mesure(cor, [0,angle,180],["x","y","z"])
+    if choix:
+        cor.append("$$ %s= %s^\\circ$$ " %(nom_angle, angle))
+        cor.append("La mesure de $%s$ est $%s^\\circ$ " %(nom_angle, angle))
+    else:
+        cor.append("$$ %s= %s^\\circ - %s^\\circ$$ " %(nom_angle, 180, angle))
+        cor.append("$$ %s= %s^\\circ$$ " %(nom_angle, 180 - angle))
+        cor.append("La mesure de $%s$ est $%s^\\circ$ " %(nom_angle, 180 - angle))          
+    return (exo, cor, question)
+</pre></li>
+<li class="sousTitre">Code LaTeX genéré :</li>
+<li class="sousSousTitre">Sujet :</li>
+<li><pre class="brush:tex">
+\begin{center}
+  \psset{unit=0.5cm}
+  \begin{pspicture}(-5,-1)(5,5.5)
+    \psarc(0,0){5}{0}{180}
+    \psarc(0,0){4.5}{0}{180}
+    \psarc(0,0){3}{0}{180}
+    \psarc(0,0){0.5}{0}{180}
+    \SpecialCoor
+    \multido{\i=0+1}{181}{\psline[linewidth=0.01](4.5;\i)(5;\i)}
+    \multido{\i=0+10}{19}{\psline(4;\i)(5;\i)}
+    \psframe(-5,-1)(5,0)
+    \multido{\i=5+10}{18}{\psline(4.25;\i)(5;\i)}
+    \tiny
+    \multido{\i=0+10}{19}{\rput(3.75;\i){\i }}
+    \pscircle[fillstyle=solid, fillcolor=white]{0.1}
+    \NormalCoor
+    \SpecialCoor
+    \psline[linewidth=0.05](0;0)(5.2;0)
+    \rput(5.5;0){$x$}
+    \NormalCoor
+    \SpecialCoor
+    \psline[linewidth=0.05](0;0)(5.2;15)
+    \rput(5.5;15){$y$}
+    \NormalCoor
+    \SpecialCoor
+    \psline[linewidth=0.05](0;0)(5.2;180)
+    \rput(5.5;180){$z$}
+    \NormalCoor
+  \end{pspicture}
+\end{center}
+</pre></li>
+<li class="sousSousTitre">Corrigé :</li>
+<li><pre class="brush:tex">
+\begin{center}
+  \psset{unit=0.5cm}
+  \begin{pspicture}(-5,-1)(5,5.5)
+    \psarc(0,0){5}{0}{180}
+    \psarc(0,0){4.5}{0}{180}
+    \psarc(0,0){3}{0}{180}
+    \psarc(0,0){0.5}{0}{180}
+    \SpecialCoor
+    \multido{\i=0+1}{181}{\psline[linewidth=0.01](4.5;\i)(5;\i)}
+    \multido{\i=0+10}{19}{\psline(4;\i)(5;\i)}
+    \psframe(-5,-1)(5,0)
+    \multido{\i=5+10}{18}{\psline(4.25;\i)(5;\i)}
+    \tiny
+    \multido{\i=0+10}{19}{\rput(3.75;\i){\i }}
+    \pscircle[fillstyle=solid, fillcolor=white]{0.1}
+    \NormalCoor
+    \SpecialCoor
+    \psline[linewidth=0.05](0;0)(5.2;0)
+    \rput(5.5;0){$x$}
+    \NormalCoor
+    \SpecialCoor
+    \psline[linewidth=0.05](0;0)(5.2;15)
+    \rput(5.5;15){$y$}
+    \NormalCoor
+    \SpecialCoor
+    \psline[linewidth=0.05](0;0)(5.2;180)
+    \rput(5.5;180){$z$}
+    \NormalCoor
+  \end{pspicture}
+\end{center}
+$$ \widehat{yOz}= 180^\circ - 15^\circ$$
+$$ \widehat{yOz}= 165^\circ$$
+La mesure de $\widehat{yOz}$ est $165^\circ$
+</pre></li>
+<li class="sousTitre">Rendu après compilation :</li>
+<li><img class="aide img70" src="/data/images/exemple_detaille_2.jpg" alt="exemple_detaille_2"/></li>
+</ul>
+<!-- Onglet 4 -->
+<ul id="AideDeveloppeur-4" class="hide">
+<li>Une fois que vous avez créé un exercice dont vous êtes satisfait, vous pouvez me le proposer pour l'inclure dans Actimaths. Pour ce faire, vous devez me fournir les 2 fichiers suivants :</li>
+<li class="sousSousTitre">Le fichier Python de votre exercice "mon_exercice_perso.py" qui se trouve dans le dossier /sdk_actimaths/exercices_actimaths/</li>
+<li class="sousSousTitre">Le fichier "niveau.xml" complété qui se trouve dans le dossier /sdk_actimaths/data/onglets/</li>
+<li>J'évalurais alors votre code et si tout est OK, il sera inclut dans Actimaths et votre nom sera ajouté aux crédits.</li>
+</ul>
+<!-- FIN -->
+</div> <!-- END List Wrap -->
+</div> <!-- END Organic Tabs (AideDeveloppeur) -->
+<!-- Bouton de retour à Actimaths -->
+<p class="input"><a class="aide" href="/index.html">Retour</a> </p>
+</div>
+</body>
+</html>

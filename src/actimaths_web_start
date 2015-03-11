@@ -1,0 +1,4 @@
+#!/usr/bin/env python2
+
+from actimaths_web import actimaths_web
+actimaths_web.main()

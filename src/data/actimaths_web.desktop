@@ -1,0 +1,11 @@
+[Desktop Entry]
+Icon=/usr/share/actimaths_web/actimaths_web.png
+Version=1.0
+Name=Actimaths_web
+Comment=Générateur de présentation de maths
+Exec=/usr/bin/actimaths_web_start
+Terminal=true
+Type=Application
+Categories=GNOME;Education;
+StartupNotify=true
+Name[fr_FR]=Actimaths_web

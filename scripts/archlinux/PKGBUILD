@@ -1,0 +1,15 @@
+# Maintainer: Jean-Baptiste Le Coz <jb.lecoz@gmail.com>
+
+pkgname=actimaths_web
+pkgver=1.01
+pkgrel=1
+pkgdesc="Generates math exercises with LaTeX/Pstricks (only in french)"
+url='http://mathsecaillou.ile.nc/'
+license=('GPL2') 
+arch=('any')
+depends=('python2' 'python2-lxml' 'texlive-pstricks' 'texlive-latexextra')
+
+package() {
+  python2 setup.py install --root="$pkgdir" --prefix=/usr
+}
+
